@@ -6,7 +6,6 @@ body {
     display: flex;
     justify-content: initial;
     align-items: center;
-    height: 100vh;
     flex-direction: column;
 }
 
