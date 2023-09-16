@@ -63,13 +63,13 @@ function singUp() {
 
 
 const params = new URLSearchParams(window.location.search);
-const nombre = params.get('nombre').toLowerCase();
-const password = params.get('contrasena').toLowerCase();
+const nombre = params.get('nombre');
+const password = params.get('contrasena');
 const app = params.get('app1');
 const apptwo = params.get('app2'); 
 const appthree = params.get('app3');
 
 if(!(nombre === null && password === null)){
-    userData.push({nombre_usuario: nombre, contrasena: password, rol: "usuario",apli: [app,apptwo,appthree]});
+    userData.push({nombre_usuario: nombre.toLowerCase(), contrasena: password.toLowerCase(), rol: "usuario",apli: [app,apptwo,appthree]});
 }
 console.log(userData);
