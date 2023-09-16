@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
     padding-left: 40%;
+    padding-top: 5%;
     padding-right: 38%;
-    PADDING-TOP: 4%;
     display: flex;
-    justify-content: center;
+    justify-content: initial;
     align-items: center;
     height: 100vh;
-    flex-direction: column; /* Centrar verticalmente y apilar elementos */
+    flex-direction: column;
 }
 
 #container {
@@ -37,7 +37,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-.form {
+.formulario {
     text-align: center;
     width: 20%;
     display: flex;
