@@ -13,7 +13,6 @@ fetch(archivoJSON)
     })
     .then(data => {
         // El contenido del archivo JSON está disponible en 'data'
-        console.log(data); // Puedes procesar los datos aquí
         console.log(data.usuarios[0].nombre_usuario);
         console.log(data.usuarios[1].nombre_usuario);
         userData.push({nombre_usuario: data.usuarios[0].nombre_usuario, 
