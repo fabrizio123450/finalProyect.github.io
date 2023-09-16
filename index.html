@@ -7,29 +7,25 @@
     <title>Título de tu página</title>
 
     <!-- Enlaces a archivos CSS externos -->
-    <link rel="stylesheet" href="./css/login.css">
-    <!-- Agrega más enlaces CSS si es necesario -->
-    <!-- Inclusiones de archivos JavaScript externos -->
+    <link rel="stylesheet" href="login.css">
     <script src="./js/hora.js" defer></script>
     <script src="./js/script.js" defer></script>
-
 </head>
-
 <body>
-    <!-- Contenido de tu página web va aquí -->
-    
     <h1>BAUL DE APPS</h1>
     <p id="hora"></p>
-
-    <div class="login-form">
-        <input type="text" id="name" placeholder="NOMBRE" />
-        <input type="password" id="pass" placeholder="CONTRASEÑA" />
+    <div id="container">
+        <form>
+            <div>
+                <input type="text" id="name" placeholder="Nombre" />
+                <input type="password" id="pass" placeholder="Contraseña" />
+            </div>
+            <div id="container-buttons">
+                <button type="submit" style="margin-right: 5px;" id="botonLogin" onclick="loginf()">Login</button>
+                <button id="botonSing" style="margin-left: 5px;" onclick="singUp()">SingUp</button>
+            </div>
+            <p id="error">*Datos inconrrectos</p>
+        </form>
     </div>
-    <div class="login-buttons">
-        <button type="submit" id="botonLogin" onclick="loginf()">LOGIN</button>
-        <button id="botonSing" onclick="singUp()">singUp</button>
-    </div>
-    <p id="error">*DATOS INCORRECTOS</p>
 </body>
-
 </html>

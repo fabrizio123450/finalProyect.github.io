@@ -1,8 +1,8 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+    padding-left: 40%;
+    padding-right: 38%;
+    PADDING-TOP: 6%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,43 +10,47 @@ body {
     flex-direction: column; /* Centrar verticalmente y apilar elementos */
 }
 
-.container {
+#container {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    text-align: center;
+    padding: 5%;
+    PADDING-RIGHT: 37PX;
+
 }
 
 h1 {
     font-size: 36px;
-    margin-bottom: 20px; /* Espaciado adicional hacia abajo */
+    margin-bottom: 20px;
 }
+
 #hora {
     position: absolute;
-    top: 10px; /* Ajustar la posición vertical */
-    left: 10px; /* Ajustar la posición horizontal */
+    top: 10px;
+    left: 10px;
     font-size: 16px;
-    color: #333; /* Color del texto opcional */
+    color: #333;
 }
-#error{
-    color: red;
-    display: none;
-}
+
 h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-.login-form {
+.form {
     text-align: center;
-    max-width: 300px;
-    margin: 0 auto;
+    width: 20%;
     display: flex;
     flex-direction: column;
+    border: 2px solid #ccc;
+    /* Agregar borde al formulario */
+    padding: 20px;
+    /* Añadir espacio interno al formulario */
+    border-radius: 10px;
+    /* Añadir bordes redondeados al formulario */
 }
 
-.login-form input {
+input {
     width: 100%;
     padding: 10px;
     margin-bottom: 10px;
@@ -55,25 +59,31 @@ h2 {
     font-size: 16px;
 }
 
-.login-buttons button {
+#container-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -21px
+}
+
+button {
     background-color: #333;
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    margin-right: 10px; /* Espacio entre los botones */
+    flex: 1;
+    margin: 0;
+  
 }
-
-.login-buttons button:last-child {
-    margin-right: 0; /* Sin margen a la derecha para el último botón */
-}
-
-.login-buttons button:hover {
+#error{
+    color: red;
+    display: none;
+} 
+/* Agregar el efecto hover */
+button:hover {
     background-color: #413f3f;
-}
-
-.login-buttons button:active {
-    background-color: #1f1d1d;
 }
